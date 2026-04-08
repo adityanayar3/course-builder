@@ -8,6 +8,12 @@ const userSchema = new mongoose.Schema(
       unique: true,
       index: true,
     },
+    googleId: {
+      type: String,
+      unique: true,
+      sparse: true,
+      index: true,
+    },
     email: {
       type: String,
       required: [true, "Email is required"],
@@ -26,6 +32,16 @@ const userSchema = new mongoose.Schema(
       type: String,
       enum: ["learner", "creator", "admin"],
       default: "learner",
+    },
+    refreshTokenHash: {
+      type: String,
+    },
+    tokenVersion: {
+      type: Number,
+      default: 0,
+    },
+    lastLoginAt: {
+      type: Date,
     },
     enrolledCourses: [
       {
