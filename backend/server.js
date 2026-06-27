@@ -1,5 +1,6 @@
 // create a server using express
 const express = require('express');
+const connectDB = require('./config/db');
 const app = express();
 const port = 3000;
 
@@ -15,3 +16,8 @@ app.get('/health', (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
+
+
+// connect to the database
+connectDB();
+
