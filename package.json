@@ -1,0 +1,24 @@
+{
+  "name": "course-builder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adityanayar3/course-builder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adityanayar3/course-builder/issues"
+  },
+  "homepage": "https://github.com/adityanayar3/course-builder#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^4.22.2",
+    "mongoose": "^8.24.1"
+  }
+}
