@@ -17,8 +17,11 @@
   },
   "homepage": "https://github.com/adityanayar3/course-builder#readme",
   "dependencies": {
+    "@google/generative-ai": "^0.24.1",
     "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
     "express": "^4.22.2",
-    "mongoose": "^8.24.1"
+    "mongoose": "^8.24.1",
+    "undici": "^5.29.0"
   }
 }

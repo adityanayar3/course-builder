@@ -1,8 +1,9 @@
 // connect to the database
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
+const path = require('path');
 
-dotenv.config();
+dotenv.config({ path: path.join(__dirname, '..', '.env'), quiet: true });
 
 const connectDB = async () => {
   try {
@@ -18,4 +19,3 @@ const connectDB = async () => {
 };
 
 module.exports = connectDB;
-
